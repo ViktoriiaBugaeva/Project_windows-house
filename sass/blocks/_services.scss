@@ -51,16 +51,16 @@
 	
 	&:nth-child(1) {
 		margin-bottom: 25px;
-		background-image: url(/img/services-img/services-bg-1.png);
+		background-image: url('../img/services-img/services-bg-1.png');
 	}
 
 	&:nth-child(2) {
 		margin-bottom: 25px;
-		background-image: url(/img/services-img/services-bg-2.png);
+		background-image: url('../img/services-img/services-bg-2.png');
 	}
 
 	&:nth-child(3) {
-		background-image: url(/img/services-img/services-bg-3.png);
+		background-image: url('../img/services-img/services-bg-3.png');
 		
 		@media screen and (max-width:$lg) {
 			margin-bottom: 25px;
@@ -68,7 +68,7 @@
 	}
 
 	&:nth-child(4) {
-		background-image: url(/img/services-img/services-bg-4.png);
+		background-image: url('../img/services-img/services-bg-4.png');
 		
 	}
 

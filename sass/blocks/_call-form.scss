@@ -1,8 +1,8 @@
 .call-form {
-	background-image: url(/img/call-form-img/call-form-bg.png);
+	background-image: url('../img/call-form-img/call-form-bg.png');
 	background-size: cover;
 	@media screen and (max-width:$lg) {
-		background-image: url(/img/call-form-img/call-form-bg-1.png);	
+		background-image: url('../img/call-form-img/call-form-bg-1.png');	
 	}
 }
 
@@ -152,7 +152,7 @@
 			display: none;
 			width: 30px;
 			height: 30px;
-			background-image: url('/img/call-form-img/call-form-vector.png');
+			background-image: url('../img/call-form-img/call-form-vector.png');
 			background-size: contain;
 			position: absolute;
 			top: 25%;
