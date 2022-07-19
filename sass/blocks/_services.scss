@@ -1,0 +1,90 @@
+
+.main {
+	background-color: rgb(242, 242, 242);
+}
+.block-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.services {
+
+	&__services-title {
+		padding: 67px 0 48px 0;
+	}
+
+	&__services-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 100px;
+
+		@media screen and (max-width:$lg) {
+			flex-direction: column;	
+			align-items: center;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+.services-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 49%;
+	height: 268px;
+	border-radius: 3px;
+	background-size: cover;
+
+	@media screen and (max-width:$lg) {
+		width: 60%;
+	}
+
+
+	&__card {
+		display: flex;
+		padding-left: 50px;
+		padding-top: 55px;
+		align-items: center;
+	}
+	
+	&:nth-child(1) {
+		margin-bottom: 25px;
+		background-image: url(/img/services-img/services-bg-1.png);
+	}
+
+	&:nth-child(2) {
+		margin-bottom: 25px;
+		background-image: url(/img/services-img/services-bg-2.png);
+	}
+
+	&:nth-child(3) {
+		background-image: url(/img/services-img/services-bg-3.png);
+		
+		@media screen and (max-width:$lg) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&:nth-child(4) {
+		background-image: url(/img/services-img/services-bg-4.png);
+		
+	}
+
+	h2 {
+		margin-left: 22px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	p {
+		margin-left: 50px;
+		margin-bottom: 42px;
+		width: 325px;
+		line-height: 19px;
+	}
+}
+
+

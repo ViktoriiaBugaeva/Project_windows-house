@@ -1,0 +1,27 @@
+
+@import './blocks/variables';
+@import './blocks/_header';
+@import './blocks/services';
+@import './blocks/products';
+@import './blocks/call-form';
+@import './blocks/about';
+@import './blocks/portfolio';
+@import './blocks/contacts-footer';
+
+
+.body {
+	color: #2F2F51;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	font-family: 'Roboto', sans-serif;
+	@media screen and (max-width:$lg) {
+		max-width: 880px;
+	}
+} 
+
+a {
+	text-decoration: none;
+	color: #2F2F51;
+} 

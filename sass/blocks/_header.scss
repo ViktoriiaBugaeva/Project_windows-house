@@ -1,0 +1,166 @@
+.header-block {
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+	@media screen and (max-width:$lg) {
+		padding: 0 45px 0 45px;
+		justify-content: space-around;
+	}	
+
+	img.logo {
+		width: 90px;
+		height: 65px;
+	}
+}
+
+.burger-nav {
+	display: none;
+	@media screen and (max-width:$lg) {
+		display: block;
+		margin-right: 20px;
+
+		#burger-nav {
+			position: absolute;
+			top: 30px;
+			left: 40px;
+			opacity: 0;
+			width: 55px;
+			height: 55px;
+			z-index: 1;
+			cursor: pointer;
+		}
+	}
+
+	// Элемент прячем без помощи display:block
+	&__menu {
+		display: block;
+		max-height: 0;
+		font-size: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 101px;
+		left: 25px;
+		background-color: white;
+		border-radius: 5px;
+		transition: 0.5s all;
+
+		a:hover {
+			color: #EF7F1A;
+		}
+	
+	}
+
+	// Элемент открываем без помощи display:block
+	input[type="checkbox"]:checked ~ .burger-nav__menu  {
+			max-height: 400px;
+			font-size: 16px;
+		}
+
+	&__item {
+		padding: 10px 40px;
+		border-top: 1px solid #3B3A63;	
+	}
+
+	&__line {
+		position: absolute;
+		top:30px;
+		left: 40px;
+		width: 55px;
+		height: 7px;
+		background-color: #EF7F1A;
+
+	}
+
+	@media screen and (max-width:$lg) {
+
+		input[type="checkbox"]:checked ~ .burger-nav__line--first  {
+			display: none;
+		}
+
+		input[type="checkbox"]:checked ~ .burger-nav__line--second  {
+			transform: rotate(45deg);
+			transition: 0.5s all;
+		}
+
+		input[type="checkbox"]:checked ~ .burger-nav__line--third  {
+			transform: rotate(-45deg);
+			transition: 0.5s all;
+		}
+
+		input[type="checkbox"]:checked ~ .burger-nav__line--fourth  {
+			display: none;
+		}
+
+	}
+
+	&__line--second,
+	&__line--third {
+		top:50px;
+
+	}
+
+	&__line--fourth {
+		top:70px;
+	}
+}
+
+.logo {
+	@media screen and (max-width:$lg) {
+		margin-right: auto;
+	}
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.nav__list-header {
+width: 650px;
+@media screen and (max-width:$lg) {
+		display:none;
+	}
+}
+
+.list__item-header {
+	a:hover {
+		color: #EF7F04;
+	}
+}
+
+.header-buttons {
+	width: 355px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn {
+	width: 170px;
+	height: 40px;
+	font-weight: 700;
+	font-size: 13px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&:first-child {
+		background-color: #EF7F04 ;
+	}
+
+	&:last-child {
+		background-color: #3B3A63;
+	}
+
+	img {
+		margin-right: 5px;
+	}
+}
+	
+
